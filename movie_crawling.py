@@ -21,8 +21,8 @@ def open_db():
     conn = pymysql.connect(
         host='localhost',
         port=3306,
-        user='root',
-        password='mys@Clive.P1350!', db='movie')
+        user='jangwoo',
+        password='park', db='movie')
 
     cur = conn.cursor(pymysql.cursors.DictCursor)
     return conn, cur
