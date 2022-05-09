@@ -43,6 +43,7 @@ def gen_good_score_list():
         buffer.append(t)
 
         if len(buffer) % 2 == 0:
+            print(buffer)
             cur2.executemany(insert_sql, buffer)
             conn2.commit()
             buffer = []
